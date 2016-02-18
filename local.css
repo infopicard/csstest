@@ -1,0 +1,544 @@
+
+/* $Id: local_sample.css,v 1.1 2009/02/28 23:33:58 jwolf Exp $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom css and css overrides in this file and  */ 
+/* rename it local.css.  By restricting your css changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.               */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom css to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Uncomment (remove leading semicolon from ) the  */ 
+/*    following line in your theme's .info file:      */
+/*    ;stylesheets[all][] = local.css                 */
+/* 4. Clear cached data at admin/settings/performance */
+#legal-notice {
+  display: none;
+}
+
+/* womo-abenteuer - Gesamt
+-------------------------------------------------------------- */
+
+
+
+
+
+
+caption {
+	display: table-caption;
+	font-size: 1.0em;
+	text-align: left;
+	font-weight: bold;
+  background:#555555;
+}
+body {
+  font-family: Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  #background-image: url("https://dl.dropboxusercontent.com/u/4908150/USA2014/0321-16.jpg");
+  #position: absolute;
+  #height: 100%;
+  #width: 100%;
+  #background-repeat: no-repeat;
+  #top: 0;
+  #left: 0;
+}
+
+h1 {
+	font-family: Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+  	color:#DFB77C;
+	font-size:1.2em;
+	font-weight:bold;
+	line-height:1em;
+	margin-bottom:0.5em
+}
+
+h2 {
+  font-family: Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+#primary-menu {
+	display:block;
+	padding:10px 0;
+	text-align:right;
+  #font-size:110%;
+  #font-weight:bold;
+}
+
+
+/* womo-abenteuer - Frontseite ***********************************/
+
+#header-wrapper {
+  background: #fff url('images/header.png') no-repeat left top;
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 15px 20px 25px 12px;
+  position: relative;
+}
+
+#header-wrapper #search-box {
+  margin: 4px 14px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  white-space: nowrap;
+}
+
+#preface-wrapper {
+  background: transparent url('images/cropped/womoabenteuer_front.jpg') no-repeat left top;
+  height: 300px;
+  margin: -20px 0px 20px;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+}
+
+/* womo-abenteuer - content ---------------------------------- */
+table {
+border-collapse:collapse;
+border:1px solid #444444;
+margin-top:0.5em;
+margin-bottom:1em;
+width:100%;
+}
+td {
+border:1px solid #444444;
+}
+thead th {
+border-bottom:1px solid #000000;
+padding-right:1em;
+padding-left: 5px;
+text-align:left;
+font-weight: bold;
+background:#444444;
+}
+
+#content-tabs ul.primary, #content-tabs ul.secondary {
+border-bottom:1px solid #444444;
+clear:both;
+float:left;
+margin:0;
+padding:0 0;
+font-size:0.85em;
+font-weight:bold;
+}
+
+body.layout-first-main #content {
+  border-left:1px solid #444444;
+  padding:0 0 30px 25px;
+}
+
+body.front.layout-first-main #content {
+  border-left:1px solid #444444;
+  padding:0 0 30px 25px;
+}
+
+div.node {
+	border:1px solid #555555;
+	clear:both;
+	overflow:hidden;
+	padding:10px;
+	margin: 0 0 1.5em 0;
+}
+
+
+div.node .links {
+	background:none repeat scroll 0 0 #444444;
+	clear:both;
+	line-height:70%;
+	margin:0;
+}
+
+textarea, select, input.text, input.form-text, input.title {
+background:none repeat scroll 0 0 #1F1F1F;
+#border:1px none #6D6D6D;
+color:#EEEEEE;
+font-size:1em;
+margin-right:4px;
+padding:3px;
+-webkit-border-radius:4px;
+-webkit-box-shadow: 0 1px 0 #ccc, 0 -1px #fff inset;
+}
+
+div.block ul.menu li a.active {
+font-weight:normal;
+color:white;
+}
+
+div.top-post {
+background-color:#343434;
+}
+
+div.even {
+background-color:#343434;
+}
+
+
+/* womo-abenteuer - Block menus
+-------------------------------------------------------------- */
+body.layout-first-main #sidebar-first {
+  margin: 0 20px 0 0;
+  width: 150px;
+  font-size: 0.95em;
+}
+
+body.layout-first-main #content-wrapper {
+  margin: 0;
+  width: 790px;
+  font-size: 0.95em;
+}
+
+#primary-menu ul.links li {
+  font-family: Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size: 1.2em;
+  font-weight:bold;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* blocks */
+
+div.block ul.menu li a {
+  font-family: Verdana,Helvetica,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size: 0.95em;
+}
+
+body.front #sidebar-first .block h2.title {
+	#background:url("images/arrow.png") no-repeat scroll 0 0 transparent;
+	color:#DFB77C;
+	font-family:Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+	font-size:1.1em;
+	font-weight:bold;
+	margin:0 0 7px;
+	padding:0 0 0px 0px;
+	text-transform:none;
+}
+
+body.not-front #sidebar-first .block h2.title {
+  background:url("images/arrow.png") no-repeat scroll 0 0 transparent hidden;
+  color:#DFB77C;
+  font-family:Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+  font-size:1.1em;
+  font-weight:bold;
+  margin:0 0 7px;
+  padding:0 0 0px 0px;
+  text-transform:none;
+}
+
+div.block h2.title {
+	#background:url("images/arrow.png") no-repeat scroll 0 0 transparent;
+	color:#DFB77C;
+	font-family:Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
+	font-size:0.9em;
+	font-weight:bold;
+	margin:0 0 7px;
+	padding:0 0 2px 10px;
+	text-transform:none;
+}
+
+/* block not-front */
+body.not-front .block-wrapper {
+  margin-bottom: 20px;
+}
+
+/* tracker Spalten */
+.views-field-title {
+	font-size: 1.0em;
+	width: 400px;
+	overflow: hidden;
+}
+.views-field-last-comment-timestamp {
+	font-size: 0.9em;
+	width: 90px;
+	overflow: hidden;
+}
+.views-field-last-comment-name {
+	font-size: 0.9em;
+	width: 120px;
+	overflow: hidden;
+}
+.views-field-type-rb {
+	font-size: 0.9em;
+}
+.views-field-comment-count {
+	font-size: 1.0em;
+	overflow: hidden;
+}
+.views-field-new-comment {
+	font-size: 1.0em;
+	width: 80px;
+	overflow: hidden;
+}
+		  
+		  
+/* Campground Search------------------------------------------*/
+
+.views-exposed-widgets  {
+	margin-bottom:1em;
+	margin-top:1em;
+}
+
+.views-exposed-form .views-exposed-widget {
+  float: left;
+  font-size: 0.9em;
+  padding:0;
+}
+
+.views-exposed-form .views-exposed-widget .form-select {
+  float: left;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  position: relativ;
+  top:10px;
+}
+
+/* GMap------------------------------------------------*/
+.gmap-popup, .gmapnodelabel  {
+	font-size:0.75em;
+	color:black;
+	max-width:300px;
+	line-height:1.0em;
+	margin: 0;
+	padding: 0;
+}
+
+.gmap-popup a {
+	font-weight:bolder;
+	color:black;
+	font-size:1.25em;
+}
+
+/* Forums
+-------------------------------------------------------------- */
+#forum th {
+border-bottom:1px solid #000000;
+text-align:left;
+}
+
+#forum th.forum-name {
+padding-left:15px;
+text-align:left;
+}
+
+#forum .description {
+  font-size: 1.0em;
+  margin: 0.5em;
+}
+
+#forum div.indent {
+   margin-left:0;
+}
+
+#forum .container .description {
+   margin:0.5em;
+   padding:0 0 0;
+}
+
+#forum .name {
+  font-size: 1.0em;
+  margin: 0.5em;
+  font-weight: bold;
+}
+
+
+.forum-description {
+margin:5px 0 15px;
+}
+
+.legend-group {
+margin-top:25px;
+display:block;
+float:left;
+font-size: 0.8em;
+}
+
+/*** FORUM STATISTICS *********************************************************/
+
+#forum-statistics {
+  border: 1px solid #555555;
+}
+
+
+/*** FORUM THREADS ***********************************************************/
+.forum-post {
+  border: 1px solid #555555;
+}
+
+/* Header at the top of each post */
+.post-info {
+  border-bottom: 1px solid #555555;
+  background:#555555;
+  font-size: 0.8em;
+  }
+
+.post-title {
+border-bottom:1px solid #555555;
+color:#DFB77C;
+font-weight:bold;
+}
+
+/* Post text area */
+.forum-post-panel-main {
+  border-left: 1px solid #555555;
+}
+
+/* Post footer */
+.forum-post-footer {
+  border-top: 1px solid #555555;
+}
+
+.forum-jump-links {
+  border-right: 1px solid #555555;
+  float:left;
+  line-height:2em;
+  padding:0 5px;
+  width:110px;
+}
+
+.forum-post-panel-sub  {
+float:left;
+line-height:100%;
+width:120px;
+}
+
+.author-signature {
+font-style:italic;
+font-weight:bold;
+margin:10px 0 5px 10px;
+}
+  
+/* Post text area */
+.author-pane-name-status .picture {
+float:none;
+padding-left:0;
+padding-top:1em;
+}
+
+.author-pane {
+  font-size: 0.8em;
+}
+.author-name {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.forum-post-panel-main {
+  margin-left: 120px; /*Set left margin to LeftColumnWidth*/
+  height: auto !important;
+}
+
+.forum-links li {
+list-style-type:none;
+margin:0;
+padding:0 15px 0 0;
+}
+
+
+
+form.fivestar-widget span.button {
+width:0px;
+height:0px;
+}
+
+form.fivestar-widget span.button  span{
+width:0px;
+height:0px;
+}
+
+div.weblinks fieldset {
+background:none repeat scroll 0 0 transparent;
+border-right:0 none;
+margin:1.5em 0;
+padding:1.2em;
+}
+
+div.weblinks div.node .links {
+	display:none;
+}
+
+div.fivestar-widget-static .star span.off {
+	background:none no-repeat scroll 0 0 whitesmoke;
+}
+
+h2.block-title {
+  font-size: 2.1em;
+}
+
+/*               Gmap Popup Styling        */
+/*********    by cBerti 06/06/15 ***********/
+/*******************************************/
+
+.gmap-popup body {
+    overflow:hidden;
+}
+
+
+.gmap-popup {
+    background-color:whitesmoke;
+    border:1px solid black;
+    width:600px;
+    padding:4px;  
+    font-size: 1.0em;
+    line-height: 1.2;  
+}
+
+
+.gmap-popup img {
+    width:auto !important; 
+    height: 100px !important;
+}
+
+
+/* unvisited link */
+.gmap-popup a:link {
+    color: blue;
+    text-decoration:underline;    
+}
+
+
+/* mouse over link */
+.gmap-popup a:hover {
+    color: #DFB77C;
+    text-decoration:underline;
+}
+
+
+/**** ckeditor quellcode BLACK/WHITE *******/
+/*********    by cBerti 06/06/15 ***********/
+
+
+
+.cke_source {
+	font-family: 'Courier New',Monospace;
+	color: #000000;
+	font-size: small;
+	background-color: #fff;
+	white-space: pre-wrap;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
