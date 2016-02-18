@@ -486,16 +486,14 @@ h2.block-title {
     overflow:hidden;
 }
 
-
 .gmap-popup {
     background-color:whitesmoke;
     border:1px solid black;
     width:600px;
     padding:4px;  
-    font-size: 1.0em;
+    font-size: 0.9em;
     line-height: 1.2;  
 }
-
 
 .gmap-popup img {
     width:auto !important; 
